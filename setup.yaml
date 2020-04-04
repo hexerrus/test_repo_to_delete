@@ -1,2 +1,11 @@
-- name: Collect facts
-  setup:
+---
+- name: hex_setup
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Hello World!
+    shell: echo "AWX is working."
+
+  - name: Collect facts
+    setup:
